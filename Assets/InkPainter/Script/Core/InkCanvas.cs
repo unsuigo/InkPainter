@@ -288,11 +288,11 @@ namespace Es.InkPainter
 			if(eraserDebug)
 			{
 				if(debugEraserMainView!=null)
-				GUI.DrawTexture(new Rect(0, 0, 100, 100), debugEraserMainView);
+					GUI.DrawTexture(new Rect(0, 0, 100, 100), debugEraserMainView);
 				if(debugEraserNormalView!=null)
-				GUI.DrawTexture(new Rect(0, 100, 100, 100), debugEraserNormalView);
+					GUI.DrawTexture(new Rect(0, 100, 100, 100), debugEraserNormalView);
 				if(debugEraserHeightView!=null)
-				GUI.DrawTexture(new Rect(0, 200, 100, 100), debugEraserHeightView);
+					GUI.DrawTexture(new Rect(0, 200, 100, 100), debugEraserHeightView);
 			}
 		}
 
@@ -344,7 +344,7 @@ namespace Es.InkPainter
 		private void SetMaterial()
 		{
 			if(paintMainMaterial == null)
-				paintMainMaterial = new Material(Resources.Load<Material>("Es.InkPainter.PaintMain"));
+				paintMainMaterial = new Material(Resources.Load<Material>("Es.InkPainter.PaintMain1"));
 			if(paintNormalMaterial == null)
 				paintNormalMaterial = new Material(Resources.Load<Material>("Es.InkPainter.PaintNormal"));
 			if(paintHeightMaterial == null)
